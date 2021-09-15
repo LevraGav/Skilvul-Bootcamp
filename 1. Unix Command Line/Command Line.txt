@@ -1,0 +1,68 @@
+1. Membuat sebuah folder kosong dengan nama-mu sendiri
+   mkdir arvel
+
+2. Di dalam folder tersebut buatlah :
+   • Folder sekolah
+     mkdir sekolah
+   • Folder kerja
+     mkdir kerja
+
+3. Masuk ke dalam folder sekolah
+   cd sekolah
+   
+   Buat file dengan nama ijazah.txt, 
+   touch ijazah.txt 
+
+   nano ijazah.txt (untuk membuka dan mengisi file ijazah.txt)
+
+   Tampilkan isi dari file tersebut menggunakan CLI Command
+   cat ijazah.txt
+
+   Kemudian buat 1 file lagi dengan nama portfolio.txt
+   touch portfolio.txt 
+
+   nano portfolio.txt (untuk membuka dan mengisi file portfolio.txt)
+
+   cat portfolio.txt (untuk membuka isi file portfolio.txt)
+
+4. Keluar dari folder sekolah
+   cd ..
+
+5. Masuk ke dalam folder kerja
+   cd kerja
+
+   Buat file dengan nama cv.txt
+   touch cv.txt 
+
+   nano cv.txt (untuk membuka dan mengisi file cv.txt)
+
+   Tampilkan isi dari file tersebut menggunakan CLI Command
+   cat cv.txt
+
+6. Pada tahap ini kamu lupa jika sebenarnya file portfolio.txt seharusnya tidak berada pada folder sekolah, jadi kamu harus memindahkannya ke dalam folder kerja.
+   • Kembali ke folder arvel.
+     cd ..
+ 
+   • Masuk ke folder sekolah.
+     cd sekolah
+ 
+   • Memindahkan file portfolio.txt dari folder sekolah ke folder kerja.
+     mv portfolio.txt ../kerja
+ 
+   • Mengecek isi dari folder sekolah sekarang.
+     ls
+ 
+   • Kembali ke folder arvel.
+     cd ..
+ 
+   • Masuk ke folder kerja.
+     cd kerja
+ 
+   • Mengecek isi dari folder kerja sekarang.
+     ls
+ 
+
+
+
+
+
