@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+#daftar-siswa{
+    background-color: #5d6573;
+}
+
+#daftar-siswa > p {
+    margin: 0;
+    padding: 0;
+    color: #f3f4f6;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 10px 15px;
+}
+
+#daftar-siswa > p:hover{
+    background-color: #e5e7e8;
+    color: #111827;
+}
