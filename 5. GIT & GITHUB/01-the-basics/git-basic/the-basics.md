@@ -37,5 +37,5 @@
 14. Commit with the message "removing first.txt"<br>
     git commit -m "removing first.txt"
     
-15. Check out your commits using git log
-    <br>
+15. Check out your commits using git log<br>
+    git log
