@@ -1,12 +1,60 @@
 # 04-more-advanced
 
 1. What is the difference between git reset and git revert. When would you use one over the other?
+Git reset
+This command is somewhat complicated. It actually does a couple of different things depending on how it is invoked. The command modifies the index (the so-called “staging area”). 
+It can also change which commit a branch head is currently pointing at. This command may alter existing history (by changing the commit that a branch references).
+
+Git revert
+This command can be considered an ‘undo’ type command. However, it is not a traditional undo operation. Instead of removing the commit from the project history, it figures out 
+how to invert the changes introduced by the commit and appends a new commit with the resulting inverse content. This prevents Git from losing history, which is important for the 
+integrity of your revision history and for reliable collaboration.
+
+Which one to use?
+Using git log when using git revert will have all the history of commits. If you want to remove the commits from the history, then revert is not a good choice, but if you want to 
+maintain the commit changes in the history, then revert is the suitable command instead of reset.
 
 
 2. What is the difference between git merge and git rebase. When would you use one over the other?
+Git merge
+Git merge is a command that allows you to merge branches from Git. Merging is a common practice for developers. Whether branches are created for testing, bug fixes, or other reasons, 
+merging commits changes to another branch. It takes the contents of a source branch and integrates it with a target branch.
+
+When you use Git merge, only the target branch is changed. The source branch history remains. Advocates of Git merge like it because it preserves the history of a branch. 
+
+Git rebase
+Git rebase is a command that allows developers to integrate changes from one branch to another. Git rebase compresses all the changes into a single “patch.” Then it integrates the 
+patch onto the target branch. Unlike merging, rebasing flattens history. It transfers the completed work from one branch to another. In the process, unwanted history is eliminated.
+
+Advocates of Git rebase like it because it simplifies their review process.
+
+Difference?
+Git rebase and merge both integrate changes from one branch into another. Where they differ is how it's done. Git rebase moves a feature branch into a master. Git merge adds a 
+new commit, preserving the history.
+
+Which one to use?
+If you're working alone or on a small team, use rebase. If you're working with a big team, use merge. 
 
 
 3. What is the difference between git stash pop and git stash apply. When would you use one over the other?
+The key difference between git stash pop and apply involves the stash history. When a developer uses the git stash apply command, the most recently saved stash overwrites files in the current working tree but leaves 
+the stash history alone. In contrast, the pop command restores files but then deletes the applied stash. If a developer ever feels the need to use that restored stash again, it will be saved in the local file system.
+
+Think of the git stash pop command as a two-step process. It pulls the most recent stash from history, makes the appropriate changes to files in the local workspace and then deletes that entry from the stash history. 
+Once the git stash pop command is successfully invoked, the stash is permanently deleted and can never be accessed again.
+
+Which one to use?
+Developers shouldn't shelve Git changes in the stash too often. Use the stash for temporary, short-term storage of file system changes. If changes must be stored over a prolonged period, commit those changes to a 
+topic branch.
+
+As such, the idea of a keeping a local stash around for an extended time runs counter to the basic philosophy of distributed version control with Git. That's why it's recommended that a developer use git stash pop 
+to restore conflict-free files instead of the complementary git stash apply command.
 
 
 4. What kinds of things can you do in interactive mode when rebasing?
+Interactive rebasing can be used for changing commits in many ways such as editing, deleting, and squashing. To tell Git where to start the interactive rebase, use the SHA-1 or index of the commit that immediately 
+precedes the commit you want to modify. To start an interactive rebase, we need to tell Git which commits we want to modify. We do this by referencing the commit immediately prior to the earliest commit we want to 
+modify. Or, put simply, we reference “the last commit [we] want to retain as-is,”
+
+But be careful, If you modify a commit, that commit and all successive commits will have new SHA-1’s. This won’t affect anything if the commits that you have modified haven’t been pushed to a remote branch. However, 
+if you did in fact complete an interactive rebase on commits that were already pushed to a remote branch and then pushed your branch again you would see an error.
