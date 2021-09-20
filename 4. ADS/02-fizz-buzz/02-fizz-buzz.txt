@@ -1,0 +1,23 @@
+Pseudocode for Fizz-Buzz Program:    
+1. BEGIN   
+
+2. STORE "x" AS INTEGER WITH ANY VALUE 
+
+3. IF "x" is LESS THAN 1   
+        DISPLAY "The minimum value is 1"  
+    
+    ELSE   
+        STORE "number" AS INTEGER WITH 1   
+        WHILE "number" LESS THAN or EQUALS to "x"  
+            IF "number" MODULUS BY 3 EQUALS 0   
+                DISPLAY "Fizz"  
+            ELSE IF "number" MODULUS BY 5 EQUALS 0  
+                DISPLAY "Buzz"
+            ELSE IF "number" MODULUS BY 3 EQUALS 0 AND "number" MODULUS BY 5 EQUAL 0  
+                DISPLAY "FizzBuzz"
+            ELSE  
+                DISPLAY "number"  
+            SET "number" WITH "number" PLUS 1  
+        END WHILE  
+
+4. END  

@@ -1,0 +1,26 @@
+Pseudocode for Thermometer Program :  
+1. BEGIN
+
+2. STORE “temperature” AS INTEGER WITH ANY VALUE  
+
+3. STORE “temperature_Type” AS STRING WITH ANY VALUE  
+
+4. STORE “result” AS INTEGER  
+
+5. IF "temperature_Type" EQUALS "celcius"
+        SET “result” WITH “temperature”  
+
+    ELSE IF "temperature_Type" EQUALS "fahrenheit"
+        CALCULATE (“temperature” MINUS 32) TIMES (5 DIVIDED 9)  
+        SET “result” WITH VALUE from CALCULATION RESULT
+
+    ELSE IF "temperature_Type" EQUALS kelvin  
+        CALCULATE “temperature” MINUS 273.15  
+        SET “result” WITH VALUE CALCULATION RESULT
+
+    ELSE
+        DISPLAY "Temperature type is not available. Only fahrenheit, kelvin and celsius are available for calculations."  
+
+6. DISPLAY “result”  
+
+7. END

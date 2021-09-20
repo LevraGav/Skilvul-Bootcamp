@@ -1,0 +1,25 @@
+Pseudocode for Palindrome Program:  
+1. BEGIN
+
+2. STORE "word" WITH ANY VALUE
+
+3. STORE "length_Word" as INTEGER WITH THE NUMBER of LETTERS from "word" 
+
+4. STORE "count_Right" as INTEGER WITH "lengthWord" MINUS 1  
+
+5. STORE "count_Left" as INTEGER WITH 0 
+
+6. STORE "output" as BOOLEAN 
+
+7. WHILE "count_Right" MORE THAN or EQUALS 0 AND "count_Left" LESS THAN "length_Word" 
+        IF "word" INDEX "count_Left" EQUALS "word" INDEX "count_Right" 
+            SET "output" WITH TRUE
+            SET "count_Left" WITH "count_Left" PLUS 1 
+            SET "count_Right" WITH "count_Right" MINUS 1
+        ELSE 
+            SET "output" WITH FALSE
+    END WHILE
+
+8. DISPLAY "output" 
+
+9. END
