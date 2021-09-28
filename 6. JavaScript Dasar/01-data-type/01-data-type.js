@@ -27,3 +27,6 @@ console.log(isNotNumber);
 /// Gunakan built-in function yang dimiliki oleh Javascript untuk mengubah sebuah String menjadi Number
 const stringToNumber = parseInt("1000");
 console.log(stringToNumber);
+
+// Pembuktian
+console.log("1000" + " " + "sekarang bertipe data", typeof(stringToNumber));
