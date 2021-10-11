@@ -1,0 +1,11 @@
+1. Apa itu localStorage?
+localStorage adalah properti yang memungkinkan situs dan aplikasi JavaScript menyimpan pasangan nilai kunci di browser web tanpa tanggal kedaluwarsa. Ini berarti data yang disimpan di browser akan
+bertahan bahkan setelah jendela browser ditutup.
+
+2. Apa itu cookies?
+Cookie adalah istilah untuk kumpulan informasi yang berisi rekam jejak dan aktivitas ketika menelusuri sebuah website. Secara sederhana pengertian cookies adalah 
+kumpulan data yang diterima komputer dari sebuah situs dan mengirimkan kembali ke situs yang dikunjungi.
+
+3. Apa perbedaan antara localStorage dan sessionStorage?
+localStorage mirip dengan sessionStorage, kecuali bahwa sementara data localStorage tidak memiliki waktu kedaluwarsa, data sessionStorage dihapus saat sesi halaman berakhir — yaitu, 
+saat halaman ditutup. (data Penyimpanan lokal untuk dokumen yang dimuat dalam sesi "penjelajahan pribadi" atau "penyamaran" dihapus saat tab "pribadi" terakhir ditutup.)
