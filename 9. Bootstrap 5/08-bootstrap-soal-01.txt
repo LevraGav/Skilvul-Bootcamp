@@ -1,0 +1,33 @@
+1. Apa itu CSS Framework?
+CSS Framework adalah hasil formula codingan website yang telah siap digunakan. Sehingga programmer tidak 
+perlu menghabiskan banyak waktu dan tenaga untuk membuat formula CSS website baru dari awal. Membuat 
+website jadi lebih mudah, cepat, indah, menarik, dan efisien. Semua jenis website dapat menggunakan CSS 
+Framework baik untuk website pribadi maupun website-website komersial. 
+
+2. Apakah bootstrap satu-satunya CSS Framework yang dapat kita gunakan?
+Tidak, ada banyak Framework selain bootstrap yang sudah di buat oleh komunitas-komunitas seperti foundation,
+bulma, semantic UI, UiKit, materialize, pure CSS, dan lain - lain.
+
+3. Sebutkan beberapa CSS Framework selain Bootstrap
+Foundation,bulma, semantic UI, UiKit, materialize, pure CSS, gumby, skeleton, blueprint
+
+4. Bagaimana tata cara penggunaan Bootstrap?
+Offline
+a. Buat Direktori Baru Kemudian Download Bootstrap 
+- Tambahkan folder baru ke dalam folder root web server Anda.
+- Kemudian download Bootstrap dari website resminya.
+- Setelah proses download selesai, Anda akan mendapatkan file zip dengan beberapa folder di dalamnya.
+- Di dalam folder ini terdapat beberapa file yang terkumpul ke dalam beberapa assets dan menyediakan 
+beberapa fungsi dan class di dalamnya. File zip ini nantinya perlu Anda ekstrak terlebih dahulu ke dalam 
+folder project supaya dapat digunakan.
+
+b. Ekstrak File Bootstrap
+Setelah Anda memindahkan file zip tadi ke dalam folder project, ekstrak file tersebut di dalamnya.
+
+c. Buat Sebuah File Index.html
+Supaya Anda bisa menggunakan Bootstrap dan membuat halaman website, buka teks editor dan buat file 
+index.html. Di dalam file index.html  isikan beberapa baris kode, tapi jangan lupa untuk memanggil 
+file Bootstrap dan library lainnya dengan menggunakan syntax <link rel=”stylesheet” href=”css/bootstrap.min.css” />
+
+Online
+Menggunakan syntax <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js”></script>
